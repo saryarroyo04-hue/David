@@ -1,0 +1,258 @@
+
+body:has(.app) {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.app {
+  width: min(100%, 390px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 28px 14px 90px;
+  position: relative;
+  background: #fff;
+  color: #17233d;
+}
+
+.app header h2 {
+  margin: 0 0 3px;
+  color: #17233d;
+  font-size: 21px;
+  font-weight: 750;
+  letter-spacing: -0.45px;
+}
+
+.app header p {
+  margin: 0;
+  color: #7b8494;
+  font-size: 11px;
+}
+
+.app .buscador {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 42px;
+  margin-top: 19px;
+  padding: 0 11px;
+  border: 1px solid #e6ebf0;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 3px 10px #2030440b;
+}
+
+.app .buscador span {
+  flex: 0 0 auto;
+  color: #8290a0;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.app .buscador input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #344054;
+  font-size: 10px;
+}
+
+.app .buscador input::placeholder {
+  color: #8792a1;
+  opacity: 1;
+}
+
+.app .buscador .filtro {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 10px;
+  background: #f0f6fa;
+  color: #53677b;
+  font-size: 18px;
+}
+
+.app .categorias {
+  display: flex;
+  gap: 8px;
+  margin: 13px -2px 17px;
+}
+
+.app .categorias button {
+  min-height: 33px;
+  padding: 0 14px;
+  border: 1px solid #edf0f3;
+  border-radius: 20px;
+  background: #fff;
+  color: #344054;
+  font-size: 10px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px #2030440a;
+}
+
+.app .categorias button.activo {
+  border-color: #176d91;
+  background: #176d91;
+  color: #fff;
+}
+
+.app .libros {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 12px 10px;
+}
+
+.app .libro {
+  min-width: 0;
+  padding: 7px;
+  border: 1px solid #edf0f3;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 3px 11px #2030440d;
+}
+
+.app .portada {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 124px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: none;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.app .portada.atomic {
+  background: linear-gradient(145deg, #fffdf6 0%, #f6f0df 56%, #e9dec5 100%);
+  color: #ae8960;
+}
+
+.app .portada.atomic::before {
+  content: "Build better habits";
+  margin-bottom: 8px;
+  color: #6c624f;
+  font: 600 7px Arial, sans-serif;
+}
+
+.app .portada.atomic::after {
+  content: "JAMES CLEAR";
+  margin-top: 12px;
+  color: #252525;
+  font: 700 8px Arial, sans-serif;
+}
+
+.app .portada.alquimista {
+  background: linear-gradient(180deg, #ee8c35 0%, #f7ba51 52%, #b94d20 100%);
+  color: #fff5da;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.app .portada.alquimista::before {
+  content: "EL";
+  margin-bottom: 3px;
+  font: 600 9px Georgia, serif;
+}
+
+.app .portada.alquimista::after {
+  content: "PAULO COELHO";
+  margin-top: 26px;
+  color: #fff2d2;
+  font: 600 8px Georgia, serif;
+  letter-spacing: 1px;
+}
+
+.app .portada.clean {
+  background: radial-gradient(ellipse at 50% 63%, #17799c 0%, #10283a 25%, #05090e 72%);
+  color: #f7f8fa;
+  font-size: 19px;
+}
+
+.app .portada.clean::before {
+  content: "A Handbook of Agile Software Craftsmanship";
+  margin-bottom: 5px;
+  color: #d9e0e7;
+  font: 500 5px Arial, sans-serif;
+}
+
+.app .portada.clean::after {
+  content: "";
+  width: 76%;
+  height: 2px;
+  margin-top: 24px;
+  background: linear-gradient(90deg, transparent, #5ee7ff, #fa75ff, transparent);
+  box-shadow: 0 0 9px #24dfff;
+}
+
+.app .libro h4 {
+  overflow: hidden;
+  margin: 7px 0 0;
+  color: #17233d;
+  font-size: 11px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app .autor {
+  overflow: hidden;
+  margin: 3px 0 0;
+  color: #596273;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app .tema {
+  overflow: hidden;
+  margin: 3px 0 0;
+  color: #8a929f;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app .disponible {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 7px;
+  border-radius: 12px;
+  background: #e4f6ef;
+  color: #168d70;
+  font-size: 8px;
+}
+
+.app .alquilar {
+  width: 100%;
+  min-height: 29px;
+  margin-top: 5px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 17px;
+  background: #176d91;
+  color: #fff;
+  font-size: 9px;
+}
+
+.app .alquilar:hover {
+  background: #125a79;
+}
+
+@media (max-width: 360px) {
+  .app { padding-right: 12px; padding-left: 12px; }
+  .app .portada { height: 112px; }
+  .app .categorias { gap: 5px; }
+  .app .categorias button { padding: 0 11px; font-size: 9px; }
+}

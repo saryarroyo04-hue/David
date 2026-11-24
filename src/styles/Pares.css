@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  background-color: #f2f8ff;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  max-width: 400px;
+  margin: auto;
+  background-color: #f8fbff;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.header-der {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-der img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.hero {
+  background-color: #dbe9f6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  color: #1a2b4a;
+  font-size: 26px;
+}
+
+.hero p {
+  font-size: 13px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.icono-libro {
+  font-size: 50px;
+}
+
+.lista {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+}
+
+.lista-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.lista-top h2 {
+  font-size: 14px;
+}
+
+.lista-top a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #2a6496;
+  margin-top: 4%;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.card img {
+  width: 50px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.card-portada {
+  width: 50px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  text-align: center;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.card-portada.atomic { background: linear-gradient(135deg, #f4edda, #d9c9a5); color: #765f39; }
+.card-portada.alquimista { background: linear-gradient(135deg, #f9a13a, #a43d12); color: #fff2d8; }
+.card-portada.clean { background: radial-gradient(ellipse, #145d80, #07101e 70%); color: white; }
+
+.card-texto {
+  flex: 1;
+}
+
+.card-texto h3 {
+  font-size: 13px;
+}
+
+.card-texto p {
+  font-size: 11px;
+  color: gray;
+}
+
+.card-texto small {
+  display: block;
+  margin-top: 4px;
+  color: #858585;
+  font-size: 9px;
+}
+
+.card-boton {
+  text-align: right;
+}
+
+.card-boton span {
+  font-size: 10px;
+  color: green;
+  background-color: #e0f2e9;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.card-boton button {
+  display: block;
+  margin-top: 8px;
+  background-color: #2d5a80;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+
+.libro-img {
+  width: 110px;
+  height: auto;
+}
+
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+
+.menu a.active {
+  color: blue;
+  font-weight: bold;
+}
+
+.menu .activo {
+  color: #2d5a80;
+  font-weight: bold;
+}

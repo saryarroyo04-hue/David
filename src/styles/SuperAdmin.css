@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.super-contenedor {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding-bottom: 80px;
+}
+
+
+.super-header {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.super-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #263650;
+}
+
+.super-header-der {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.super-header-der img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Bienvenida */
+.super-hero {
+  background-color: #dceaf7;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.super-hero h1 {
+  color: #243650;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.super-hero p {
+  color: #606c7b;
+  font-size: 14px;
+}
+
+.super-icono {
+  font-size: 55px;
+}
+
+
+.super-lista {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 0;
+}
+
+.super-lista h2 {
+  font-size: 17px;
+  color: #263650;
+  margin-bottom: 15px;
+}
+
+
+
+.super-estadisticas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.super-card {
+  background-color: #f5f8fc;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.super-card span {
+  font-size: 23px;
+}
+
+.super-card h3 {
+  color: #24618b;
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.super-card p {
+  color: #687587;
+  font-size: 12px;
+}
+
+
+
+.super-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.super-opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 10px;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+}
+
+.super-opcion span {
+  font-size: 25px;
+}
+
+.super-opcion div {
+  flex: 1;
+}
+
+.super-opcion h3 {
+  color: #263650;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.super-opcion p {
+  color: #687587;
+  font-size: 11px;
+}
+
+.super-opcion button {
+  background-color: #30668d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+}

@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.admin-contenedor {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding-bottom: 80px;
+}
+
+.admin-header {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #263650;
+  margin: 0;
+}
+
+.admin-header-izq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.admin-header-der {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-header-der img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-hero {
+  background-color: #dceaf7;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-hero h1 {
+  color: #243650;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.admin-hero p {
+  color: #606c7b;
+  font-size: 14px;
+}
+
+.admin-icono {
+  font-size: 55px;
+}
+
+.admin-lista {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -10px;
+}
+
+.admin-lista h2 {
+  font-size: 17px;
+  color: #263650;
+  margin: 20px 0 15px;
+}
+
+.admin-estadisticas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.admin-card {
+  background-color: #f5f8fc;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.admin-card span {
+  font-size: 23px;
+}
+
+.admin-card h3 {
+  color: #24618b;
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.admin-card p {
+  color: #687587;
+  font-size: 12px;
+}
+
+.admin-opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.admin-opcion span {
+  font-size: 25px;
+}
+
+.admin-opcion h3 {
+  color: #263650;
+  font-size: 14px;
+}
+
+.admin-opcion p {
+  color: #687587;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.admin-opcion small {
+  color: #287b55;
+  font-size: 11px;
+}
+.admin-login-link {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #24618b;
+  color: white;
+  text-decoration: none;
+}
+
+.admin-login-link:hover {
+  background-color: #194766;
+}

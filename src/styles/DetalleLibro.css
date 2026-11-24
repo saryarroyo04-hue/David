@@ -1,0 +1,110 @@
+body:has(.detalle-app) {
+  margin: 0;
+  background: #f3f7fa;
+}
+
+.detalle-app {
+  width: min(100%, 390px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 88px;
+  overflow: hidden;
+  background: #fff;
+  color: #17233d;
+  font-family: Arial, sans-serif;
+}
+
+.detalle-portada-fondo {
+  position: relative;
+  display: flex;
+  height: 285px;
+  align-items: flex-end;
+  padding: 0 24px 0;
+  background: radial-gradient(ellipse at 70% 38%, #fff 0%, #e4f2f7 45%, #bdd6df 100%);
+}
+
+.detalle-portada-fondo::after {
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+  left: 0;
+  height: 98px;
+  border-radius: 25px 25px 0 0;
+  background: #fff;
+  content: "";
+}
+
+.detalle-volver,
+.detalle-acciones button {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffffeb;
+  color: #17233d;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 8px #17233d12;
+}
+
+.detalle-volver { left: 16px; }
+.detalle-acciones { position: absolute; z-index: 2; top: 20px; right: 16px; display: flex; gap: 8px; }
+.detalle-acciones button { position: static; font-size: 20px; cursor: pointer; }
+
+.detalle-portada {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 132px;
+  height: 182px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px 7px 7px 3px;
+  box-shadow: 5px 8px 15px #18283d35, inset 7px 0 8px #00000012;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.detalle-portada.atomic { background: linear-gradient(100deg, #d3c5a7, #fffdf6 17%, #f4ead3 100%); color: #a98259; }
+.detalle-portada.alquimista { background: linear-gradient(145deg, #f7bc59, #de762d 52%, #9f3d1d); color: #fff5da; }
+.detalle-portada.clean { background: radial-gradient(ellipse at 50% 63%, #17799c, #10283a 35%, #05090e 75%); color: #fff; }
+.detalle-portada-titulo { padding: 0 10px; font-size: 20px; font-weight: 700; line-height: 1.05; }
+.detalle-portada small { margin-top: auto; padding-bottom: 14px; color: inherit; font: 700 8px Arial, sans-serif; }
+.detalle-portada.atomic::before { position: absolute; top: 17px; content: "Build better habits"; color: #6c624f; font: 600 6px Arial, sans-serif; }
+
+.detalle-disponibilidad {
+  position: absolute;
+  z-index: 2;
+  top: 92px;
+  right: 17px;
+  padding: 7px 10px;
+  border-radius: 16px;
+  background: #168d70;
+  color: #fff;
+  font-size: 10px;
+}
+
+.detalle-contenido { position: relative; z-index: 1; margin-top: -4px; padding: 8px 17px 18px; }
+.detalle-contenido h1 { margin: 0; font-size: 22px; letter-spacing: -.5px; }
+.detalle-autor { margin: 4px 0 8px; color: #858d9a; font-size: 13px; }
+.detalle-rating { color: #26354c; font-size: 11px; }
+.detalle-rating span { color: #f2ac13; letter-spacing: 1px; font-size: 15px; }
+.detalle-rating small { color: #818a98; font-size: 10px; }
+.detalle-etiquetas { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 16px; }
+.detalle-etiquetas span { padding: 5px 9px; border-radius: 12px; background: #f0f4f7; color: #647184; font-size: 9px; }
+.detalle-contenido h2 { margin: 0 0 7px; font-size: 14px; }
+.detalle-descripcion { margin: 0; color: #677181; font-size: 11px; line-height: 1.5; }
+.detalle-datos { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 15px; padding: 10px 0; border: 1px solid #edf0f3; border-radius: 14px; }
+.detalle-datos div { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.detalle-datos div + div { border-left: 1px solid #edf0f3; }
+.detalle-datos span { color: #176d91; font-size: 18px; }
+.detalle-datos small { color: #7b8492; font-size: 9px; }
+.detalle-datos strong { color: #26354c; font-size: 10px; }
+.detalle-solicitar { display: flex; width: 100%; min-height: 43px; justify-content: center; align-items: center; gap: 10px; margin-top: 13px; border: 0; border-radius: 12px; background: #176d91; color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+.detalle-no-encontrado { box-sizing: border-box; padding: 80px 20px; }
